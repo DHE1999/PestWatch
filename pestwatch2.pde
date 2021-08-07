@@ -49,10 +49,7 @@ void setup() {
   size(1280, 800);
   docFont = createFont("Times New Roman", 100);
   frameRate(120);
-
-  for (int b = 0; b <= 1; b++) {
-    background = (loadImage("forest.jpg"));
-  }
+  background = loadImage("forest.jpg");
   ferret = loadImage("ferret.png");
   kiwi = loadImage("kiwi.png");
   rat = loadImage("rat.png");
