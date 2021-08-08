@@ -1,0 +1,21 @@
+game, Q1, Q2, Q3
+0, 
+"pretty easy",
+"quite focused as I've had a coffee this afternoon",
+"Quite well as im the first to play it"
+1,
+"not difficult but could be underestimating how hard you programmed it to be", 
+"Lets go!", 
+"Really easy, I got most of them right"
+2, 
+"Hard, i'm terrible with this sort of stuff", 
+"yeah I'll give it a go", 
+"That was just pathetic"
+3, 
+"Very",
+"Enough",
+"Well enough"
+4, 
+"Looks pretty simple", 
+"am I ever focused?", 
+"Awful, I mean compared to others not bad"

@@ -13,7 +13,7 @@ float randY = random(50, h - 50);
 float guessX, guessY, tutScore, distBetweenClick, score, lastScore;
 float dist;
 boolean guessed, guessedTut;
-int round = 20;
+int round = 0;
 PFont docFont;
 int[][] difficulty  = { 
   {1000, 0}, {1000, 1}, {1000, 2}, {1000, 3}, 
@@ -21,7 +21,7 @@ int[][] difficulty  = {
   {250, 0}, {250, 1}, {250, 2}, {250, 3}, 
   {125, 0}, {125, 1}, {125, 2}, {125, 3}, 
   {75, 0}, {75, 1}, {75, 2}, {75, 3}, 
-  {35, 0}, {35, 1}, {35, 2}, {35, 3}, {35, 4}, 
+  {35, 0}, {35, 1}, {35, 2}, {35, 3}, {35, 4}
 };
 
 float visableTime = 0 - difficulty[0][0];
@@ -300,7 +300,7 @@ void draw() {
   else if (gameState == 1) {
     if (round == 25) {
       gameState = 3; 
-      round = 20;
+      round = 0;
       saveScores();
     } else {    
       hud();
@@ -419,7 +419,11 @@ public void hud() {
 }
 
 public void drawAnswer(PImage target, float xPos, float yPos) {
+  
+  
   dist = sqrt(abs(sq((xPos + pest.width/2) - guessX))+abs(sq((yPos + (pest.height/2)) - guessY)));
+  
+  
   if (dist < 50) {
     fill(50, 200, 50, 100);
     strokeWeight(3);
